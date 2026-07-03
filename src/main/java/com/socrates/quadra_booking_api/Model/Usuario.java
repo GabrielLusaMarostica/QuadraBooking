@@ -36,7 +36,6 @@ public class Usuario implements UserDetails {
     private String email;
 
     @NotBlank(message = "Senha é obrigatória")
-    @Size(min = 6, max = 20, message = "A senha deve ter entre 6 e 20 caracteres")
     private String senha;
 
     @Enumerated(EnumType.STRING)
